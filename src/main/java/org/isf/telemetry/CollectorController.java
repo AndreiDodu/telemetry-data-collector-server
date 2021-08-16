@@ -19,8 +19,6 @@ public class CollectorController {
 	@PostMapping(value = "/collect")
 	public Map<String, String> collect(@RequestBody Map<String, Map<String, String>> data) {
 		// TODO store data somewhere
-		System.out.println("Message received!");
-		System.out.println(data.toString());
 		Map<String, String> result = new HashMap<>();
 		result.put("status", "true");
 		return result;
